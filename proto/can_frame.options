@@ -1,0 +1,5 @@
+CanFrame.can_data         max_size:8
+CanFrame.can_data         fixed_length:true
+
+CanFrame.can_bus          max_size: 100
+CanFrame.can_bus          fixed_length:true

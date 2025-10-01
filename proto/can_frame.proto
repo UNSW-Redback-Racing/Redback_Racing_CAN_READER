@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message CanFrame {
+  // CAN ID as a positive 32-bit integer
+  uint32 can_id = 1;
+
+  // Timestamp as a uint64
+  uint64 timestamp = 2;
+
+  // CAN data as an array of 8 bytes
+  bytes can_data = 3;
+
+  // Name of the CAN bus that the frame is read from
+  string can_bus = 4;
+}
